@@ -21,7 +21,7 @@ public class Caracteres extends JPanel{
 		for(int i = 0; i < aleatorio.nextInt(100000); i++) {
 			
 			g.setColor(new Color(aleatorio.nextInt(256), aleatorio.nextInt(256), aleatorio.nextInt(256)));
-			g.setFont(new Font(fonts[aleatorio.nextInt(fonts.length)].getName(), Font.PLAIN, 12));
+			g.setFont(new Font(fonts[aleatorio.nextInt(fonts.length)].getName(), Font.PLAIN, 12 + aleatorio.nextInt(50)));
 			
 			
 			char caractere = (char) aleatorio.nextInt(255);
